@@ -39,7 +39,6 @@ server <- function(input, output) {
     ggplot(x, aes(x = dna_vec, y = Freq)) +
       geom_col(fill = "#75AADB") +
       labs(
-        title = "DNA Base Frequencies",
         x = "DNA base",
         y = "Frequency"
       ) +
