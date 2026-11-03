@@ -9,15 +9,16 @@ server <- function(input, output) {
   })
 
   output$dna <- renderText({
-    dna()
+    gsub("(.{60})", "\\1\n",dna())
   })
 
+  
   rna <- reactive({
     transcribe_dna(dna())
   })
 
   output$rna <- renderText({
-    rna()
+    gsub("(.{60})", "\\1\n",rna())
   })
 
   peptide <- reactive({
@@ -25,7 +26,7 @@ server <- function(input, output) {
   })
 
   output$peptide <- renderText({
-    peptide()
+    gsub("(.{60})", "\\1\n",peptide())
   })
 
   freqs <- reactive({

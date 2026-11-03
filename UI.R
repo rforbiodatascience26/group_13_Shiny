@@ -26,7 +26,7 @@ ui <- fluidPage(
         inputId = "n_bases",
         label = "Number of bases:",
         min = 3,
-        max = 60,
+        max = 99,
         value = 30,
         step = 3
       ),
