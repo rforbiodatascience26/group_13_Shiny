@@ -1,3 +1,9 @@
+# Load needed libraries
+library("shiny")
+library("bslib")
+library("tidyverse")
+
+
 # Define the User Interface (Frontend)
 ui <- page_fluid(
   layout_columns(

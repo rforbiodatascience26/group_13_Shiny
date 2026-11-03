@@ -1,3 +1,10 @@
+# Load needed libraries
+library("shiny")
+library("bslib")
+library("tidyverse")
+source(file = "app_functions.R")
+
+
 # Server Logic (Backend)
 server <- function(input, output) {
   
